@@ -7,5 +7,5 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" 
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 vim.keymap.set("n", "<leader>t", ":Neotree filesystem left<CR>", {})
 vim.cmd("set clipboard=unnamedplus")
---vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
---vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})
+vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})

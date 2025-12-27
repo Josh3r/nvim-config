@@ -7,4 +7,6 @@
 * You might notice as you boot-up nvim that file and folder fonts seem broken, that's because they are. You'll need a `NerdFont` for that, which isn't covered in this.
 
 ### TODOs
-[] Update instructions to accomodate setup for TS
+[ ] Update instructions to accomodate setup for TS
+[ ] Fix background issue
+* Bolder lines <> background
