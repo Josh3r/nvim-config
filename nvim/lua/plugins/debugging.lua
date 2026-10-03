@@ -9,7 +9,7 @@ return {
 			{
 				"microsoft/vscode-js-debug",
 				version = "1.x",
-				build = "npm i && npm run compile vsDebugServerBundle && mv dist out"
+				build = "npm i && npm run compile vsDebugServerBundle && mkdir -p out && mv dist out",
 			}
 		},
 		config = function ()
@@ -17,7 +17,7 @@ return {
 			vim.keymap.set('n', '<Leader>dc', function() dap.continue() end)
 			vim.keymap.set('n', '<Leader>dt', function() dap.toggle_breakpoint() end)
 			require("dap-vscode-js").setup({
-				debugger_path = vim.fn.stdpath("data") .. "/lazy/vscode-js-debug",
+				debugger_path = vim.fn.stdpath("data") .. "/lazy/vscode-js-debug/dist/src/vsDebugServer.js",
 				adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
 			})
 
