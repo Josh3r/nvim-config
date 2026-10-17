@@ -31,3 +31,6 @@ vim.o.winborder = "rounded"
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1a1b26" })
 vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#8b95b8", bg = "#1a1b26" })
 -- end
+
+-- syntax concealment for inline markdown rendering
+vim.opt.conceallevel = 2
